@@ -60,7 +60,7 @@ candidateSchema.virtual('sessions', {
 });
 
 // Index for better query performance
-candidateSchema.index({ email: 1 });
+// email unique index already created via `unique: true` in the schema above
 candidateSchema.index({ interviewDate: 1 });
 candidateSchema.index({ status: 1 });
 
